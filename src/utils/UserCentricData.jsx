@@ -1,4 +1,9 @@
 import { FaHeadphones } from "react-icons/fa";
+import { GiProfit } from "react-icons/gi";
+import { RiCollageFill } from "react-icons/ri";
+import { SiStackoverflow } from "react-icons/si";
+import { SiQuantcast } from "react-icons/si";
+import { FaPhoenixSquadron } from "react-icons/fa";
 
 export const uCData = [
     {
@@ -7,27 +12,27 @@ export const uCData = [
         'content':'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis praesentium sequi nobis saepe ipsam eos quia, vel ratione ipsum porro harum officia ut cupiditate doloremque! Illum accusantium placeat dolorum fugiat!',
     },
     {
-        'Symbol': <FaHeadphones />,
+        'Symbol': <GiProfit />,
         'heading': 'Profits',
         'content': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis praesentium sequi nobis saepe ipsam eos quia, vel ratione ipsum porro harum officia ut cupiditate doloremque! Illum accusantium placeat dolorum fugiat!',
     },
     {
-        'Symbol': <FaHeadphones />,
+        'Symbol': <RiCollageFill />,
         'heading': 'Onboarding',
         'content': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis praesentium sequi nobis saepe ipsam eos quia, vel ratione ipsum porro harum officia ut cupiditate doloremque! Illum accusantium placeat dolorum fugiat!',
     },
     {
-        'Symbol': <FaHeadphones />,
+        'Symbol': <SiStackoverflow />,
         'heading': 'Low Fees',
         'content': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis praesentium sequi nobis saepe ipsam eos quia, vel ratione ipsum porro harum officia ut cupiditate doloremque! Illum accusantium placeat dolorum fugiat!',
     },
     {
-        'Symbol': <FaHeadphones />,
+        'Symbol': <SiQuantcast />,
         'heading': 'Quality',
         'content': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis praesentium sequi nobis saepe ipsam eos quia, vel ratione ipsum porro harum officia ut cupiditate doloremque! Illum accusantium placeat dolorum fugiat!',
     },
     {
-        'Symbol': <FaHeadphones />,
+        'Symbol': <FaPhoenixSquadron />,
         'heading': 'HODL',
         'content': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis praesentium sequi nobis saepe ipsam eos quia, vel ratione ipsum porro harum officia ut cupiditate doloremque! Illum accusantium placeat dolorum fugiat!',
     },

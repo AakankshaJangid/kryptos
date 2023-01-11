@@ -26,7 +26,7 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="bg-black w-full p-4 md:p-8 lg:p-8">
+    <div className="bg-black w-full p-4 md:p-8 lg:p-10 lg:pt-28 border-t-2 border-gray-600">
       <div className="text-gray-400 pb-8 flex flex-col lg:flex lg:flex-row gap-6 lg:justify-between">
         <div className="flex flex-col gap-2 md:flex md:flex-row md:gap-12 lg:flex lg:flex-col lg:gap-6">
           <div className="flex flex-col gap-1 ">
@@ -71,11 +71,11 @@ const Footer = () => {
           <div className="">
             <h1 className="text-2xl font-medium font-sans mb-4">Newsletter</h1>
             <h4 className="text-lg font-sans">Stay Up To Date</h4>
-            <div className="px-4 py-1 flex flex-col gap-2 border-2 border-gray-500 w-full rounded-lg mt-2 md:flex md:flex-row lg:w-4/5">
+            <div className="px-4 py-1  flex flex-col gap-2 border-2 border-gray-500 w-full rounded-lg mt-4 md:flex md:flex-row lg:w-4/5">
               <input
                 type="email"
                 placeholder="Your email"
-                className="bg-transparent		focus:outline-none p-2 lg:w-3/5"
+                className="bg-transparent w-2/3		focus:outline-none p-2 lg:w-3/5"
               />
               <Button props={"SUBSCRIBE"} />
             </div>

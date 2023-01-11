@@ -17,10 +17,10 @@ const UserCentric = () => {
       lg:grid lg:grid-cols-3 lg:p-8"
       >
         {uCData.map((data) => (
-          <div className="border-2 border-gray-600 p-4 text-center rounded-lg">
-                <div className="text-center flex  flex-row justify-evenly p-4 lg:flex
-                lg:flex-col">
-              <span className=" text-blue-600 text-5xl lg:px-32">{data.Symbol}</span>
+          <div className="bg-gray-800 p-4 text-center rounded-lg hover:animate-pulse">
+                <div className="text-center flex  flex-row justify-center p-4 lg:flex
+                lg:flex-col lg:justify-center lg:items-center">
+              <span className=" text-blue-600 text-5xl ">{data.Symbol}</span>
               <h1 className="text-2xl p-2 text-mono">{data.heading}</h1>
             </div>
 

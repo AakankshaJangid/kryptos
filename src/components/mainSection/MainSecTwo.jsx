@@ -1,8 +1,9 @@
 import React from "react";
+import CountUp from 'react-countup';
 import map from "../../assets/map.png";
 const MainSecTwo = () => {
   return (
-    <div className="bg-black text-white p-8 px-12 flex flex-col lg:flex lg:flex-row">
+    <div className="bg-black text-white p-8 px-12 flex flex-col lg:flex lg:flex-row lg:justify-center">
       <div className="lg:w-2/5">
         <h1 className="text-5xl font-mono mb-4 text-white">
           We have users from all over the world
@@ -14,19 +15,20 @@ const MainSecTwo = () => {
         </p>
         <div className="grid md:flex md:gap-8">
           <div>
-            <h1 className="text-5xl font-mono mb-2 text-white">20M+</h1>
+            <h1 className="text-5xl font-mono mb-2 text-white"><CountUp end={20} />M+</h1>
             <p className="text-lg font-sans mb-4 text-gray-300">
               People have joined
             </p>
           </div>
           <div>
-            <h1 className="text-5xl font-mono mb-2 text-blue-600">100+</h1>
+            <h1 className="text-5xl font-mono mb-2 text-blue-600"><CountUp end={100} />+</h1>
             <p className="text-lg font-sans mb-4 text-gray-300">
               VVIP people have joined
             </p>
           </div>
           <div>
-            <h1 className="text-5xl font-mono mb-2 text-white">50</h1>
+            <h1 className="text-5xl font-mono mb-2 text-white"><CountUp end={50} />
+</h1>
             <p className="text-lg font-sans mb-4 text-gray-300">
               Big companies have joined
             </p>

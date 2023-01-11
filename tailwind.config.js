@@ -11,6 +11,9 @@ module.exports = {
       'xl': "1280px",
       '2xl': "1536px",
     },
+    fontFamily: {
+        sans: ['Poppins', ...defaultTheme.fontFamily.sans],
+      },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
