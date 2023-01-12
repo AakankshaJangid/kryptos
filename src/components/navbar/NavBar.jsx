@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 import { Button,ButtonOutLine } from '../../utils/Index.jsx'
+import Header from '../header/Header.jsx'
 const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
   const navBarElements = ["Market", "Exchange", "Wallet", "Trade"];
@@ -10,7 +11,7 @@ const NavBar = () => {
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <a href="javascript:void(0)">
+            <a href={<Header />}>
               <h2 className="text-3xl font-mono font-bold text-white">
                 krypt<span className="text-blue-600">o</span>s
               </h2>
@@ -62,7 +63,7 @@ const NavBar = () => {
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {navBarElements.map((data) => (
                 <li className="text-white text-xl hover:text-indigo-200 flex flex-col">
-                  <a href="">{data}</a>
+                  <a href={<Header />}>{data}</a>
                 </li>
               ))}
             </ul>
