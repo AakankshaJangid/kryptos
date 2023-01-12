@@ -16,8 +16,8 @@ const MainSecOne = () => {
               <p className="text-lg font-sans text-gray-300 mb-4">We always provide best quality for our users</p>
       </div>
       <div data-aos='fade-up' data-aos-anchor-easing='ease-in-out' className="lg:flex gap-2 p-1">
-        {mainOneData.map((data) => (
-          <div className="text-center md:p-4 mb-8 lg:w-1/3 ">
+        {mainOneData.map((data,i) => (
+          <div key={i} className="text-center md:p-4 mb-8 lg:w-1/3 ">
             <div className="lg:mx-4 flex justify-center">
             <div className="rounded-full p-2
             text-blue-600 w-12 bg-gray-300 text-3xl mx-32 mb-4 md:mx-72 lg:mx-36">{data.symbol}</div>

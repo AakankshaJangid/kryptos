@@ -22,8 +22,8 @@ const MainSecThree = () => {
         className="grid grid-cols-1  gap-4 p-4 md:grid md:grid-cols-2
       lg:grid lg:grid-cols-3 lg:p-8"
       >
-        {uCData.map((data) => (
-          <div className="bg-gray-800 p-4 text-center rounded-lg ">
+        {uCData.map((data,i) => (
+          <div key={i} className="bg-gray-800 p-4 text-center rounded-lg ">
                 <div className="text-center flex  flex-row justify-center p-4 lg:flex
                 lg:flex-col lg:justify-center lg:items-center">
               <span className=" text-blue-600 text-5xl ">{data.Symbol}</span>

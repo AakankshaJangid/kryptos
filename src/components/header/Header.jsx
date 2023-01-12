@@ -25,8 +25,8 @@ const Header = () => {
           </p>
           <div className="flex flex-col md:flex md:flex-row md:gap-16 md:justify-left lg:gap-8">
             <div className="flex ">
-              {avtars.map((data) => (
-                <div
+              {avtars.map((data,i) => (
+                <div key={i}
                   className="rounded-full p-1
             text-blue-600 w-12 h-12 bg-gray-300 text-3xl   mb-4  -mr-6"
                 >
@@ -54,8 +54,8 @@ const Header = () => {
         </div>
       </div>
       <div className="grid grid-cols-3 gap-4 px-8 lg:grid lg:grid-cols-5 ">
-        {userData.map((data)=>(
-          <div className="text-xl 
+        {userData.map((data,i)=>(
+          <div key={i} className="text-xl 
           font-mono  text-white bg-transparent p-2 text-center rounded-md flex gap-2 justify-center hover:text-2xl hover:p-0">{data.symbol}{data.name}</div>
         ))}
         

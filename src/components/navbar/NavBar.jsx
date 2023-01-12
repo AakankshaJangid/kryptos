@@ -61,8 +61,8 @@ const NavBar = () => {
             }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              {navBarElements.map((data) => (
-                <li  className="text-white text-xl hover:text-indigo-200 flex flex-col">
+              {navBarElements.map((data,i) => (
+                <li key={i} className="text-white text-xl hover:text-indigo-200 flex flex-col">
                   <a href={<Header />}>{data}</a>
                 </li>
               ))}
