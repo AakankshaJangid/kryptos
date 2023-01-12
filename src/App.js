@@ -1,10 +1,10 @@
 
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
-import GetStarted from "./components/mainSection/GetStarted";
+import MainSecFour from "./components/mainSection/MainSecFour";
 import MainSecOne from "./components/mainSection/MainSecOne";
 import MainSecTwo from "./components/mainSection/MainSecTwo";
-import UserCentric from "./components/mainSection/UserCentric";
+import MainSecThree from "./components/mainSection/MainSecThree";
 import NavBar from "./components/navbar/NavBar";
 function App() {
   return (
@@ -13,8 +13,8 @@ function App() {
       <Header />
       <MainSecOne />
       <MainSecTwo />
-      <UserCentric />
-      <GetStarted />
+      <MainSecThree />
+      <MainSecFour />
       <Footer />
     </div>
   );

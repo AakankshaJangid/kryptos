@@ -1,11 +1,16 @@
 import React from "react";
-import Button from "../sharedComponents/Button";
-import { AiFillApple } from "react-icons/ai";
-import phone from "../../assets/phoneImg.png";
-const GetStarted = () => {
+import {Button,phone,AiFillApple} from "../../utils/Index";
+
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
+const MainSecFour = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  });
   return (
     <div className="bg-black text-gray-400 p-6">
-      <div className=" lg:flex lg:p-8 ">
+      <div data-aos='fade-up' data-aos-anchor-easing='ease-in-out' className=" lg:flex lg:p-8 ">
         <div className="lg:p-8">
           <h1 className="text-5xl font-mono mb-4 text-white">
             Ready To Get Started?
@@ -25,4 +30,4 @@ const GetStarted = () => {
   );
 };
 
-export default GetStarted;
+export default MainSecFour;

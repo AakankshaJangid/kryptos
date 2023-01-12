@@ -1,7 +1,13 @@
 import React from "react";
 import CountUp from 'react-countup';
-import map from "../../assets/map.png";
+import {map} from "../../utils/Index";
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 const MainSecTwo = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  });
   return (
     <div className="bg-black text-white p-8 px-12 flex flex-col lg:flex lg:flex-row lg:justify-center">
       <div className="lg:w-2/5">
@@ -35,7 +41,7 @@ const MainSecTwo = () => {
           </div>
       </div>
     </div>
-    <div className="md:px-14">
+      <div data-aos='fade-up' data-aos-anchor-easing='ease-in-out' className="md:px-14">
         <img src={map} alt="" />
     </div>
     </div>

@@ -1,13 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import UserCentric from "../mainSection/UserCentric";
-import Button from "../sharedComponents/Button";
-import ButtonOutLine from "../sharedComponents/ButtonOutLine";
+
+import { Button,ButtonOutLine } from '../../utils/Index.jsx'
 const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
   const navBarElements = ["Market", "Exchange", "Wallet", "Trade"];
   return (
-    <nav className="w-full bg-black ">
+    <nav className="w-full bg-black fixed">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">

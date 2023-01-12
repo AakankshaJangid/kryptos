@@ -1,34 +1,19 @@
 import React from "react";
-import { IoIosMail } from "react-icons/io";
-import { IoCall } from "react-icons/io5";
-import Button from "../sharedComponents/Button";
-
+import {Button,IoCall,IoIosMail} from '../../utils/Index';
+import { dataFoo } from "../../utils/FooterData";
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 const Footer = () => {
-  const dataFoo = [
-    {
-      name: "Links",
-      item1: "Home",
-      item2: "About Us",
-      item3: "Bookings",
-      item4: "Blog",
-    },
-    {
-      name: "Legal",
-      item1: "Terms Of Use",
-      item2: "Privacy Policy",
-      item3: "Cookie Policy",
-    },
-    {
-      name: "Product",
-      item1: "Take Tour",
-      item2: "Live Chat",
-      item3: "Reviews",
-    },
-  ];
+  useEffect(()=>{
+    Aos.init({duration: 2000});
+  });
+  
   return (
     <div className="bg-black w-full p-4 md:p-8 lg:p-10 lg:pt-28 border-t-2 border-gray-600">
-      <div className="text-gray-400 pb-8 flex flex-col lg:flex lg:flex-row gap-6 lg:justify-between">
-        <div className="flex flex-col gap-2 md:flex md:flex-row md:gap-12 lg:flex lg:flex-col lg:gap-6">
+      <div data-aos='fade-up' data-aos-anchor-easing='ease-in-out'
+ className="text-gray-400 pb-8 flex flex-col lg:flex lg:flex-row gap-6 lg:justify-between">
+        <div  className="flex flex-col gap-2 md:flex md:flex-row md:gap-12 lg:flex lg:flex-col lg:gap-6">
           <div className="flex flex-col gap-1 ">
             <span className="text-blue-600 text-2xl">
               <IoIosMail />

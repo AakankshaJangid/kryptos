@@ -1,40 +1,8 @@
 import React from "react";
-import Button from "../sharedComponents/Button";
-import ButtonOutLine from "../sharedComponents/ButtonOutLine";
-import { SiBinance } from "react-icons/si";
-import { SiFitbit } from "react-icons/si";
-import { SiBitcoin } from "react-icons/si";
-import { SiMobxstatetree } from "react-icons/si";
-import { SiStackbit } from "react-icons/si";
 import CountUp from 'react-countup';
-import bitcoin from "../../assets/bitcoin.jpg";
-import avtar from "../../assets/avtar.png";
-import { FaArrowAltCircleRight } from "react-icons/fa";
-
+import { avtars , userData , Button , ButtonOutLine , bitcoin,FaArrowAltCircleRight } from "../../utils/Index";
 const Header = () => {
-  const avtars = [avtar,avtar,avtar]
-  const userData = [
-    {
-      'name': "BINANCE",
-      'symbol':<SiBinance />
-    },
-    {
-      'name': "coinBase",
-      'symbol': <SiFitbit />
-    },
-    {
-      'name': "bitcoin",
-      'symbol': <SiBitcoin />
-    },
-    {
-      'name': "tether",
-      'symbol': <SiMobxstatetree />
-    },
-    {
-      'name': "BitMEX",
-      'symbol': <SiStackbit />
-    },
-  ]
+  
   return (
     <div className="bg-black text-white p-6">
       <div className="lg:flex  lg:justify-between lg:p-4 lg:gap-44">
@@ -95,5 +63,4 @@ const Header = () => {
     </div>
   );
 };
-
 export default Header;
