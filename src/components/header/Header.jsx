@@ -4,10 +4,10 @@ import { avtars , userData , Button , ButtonOutLine , bitcoin,FaArrowAltCircleRi
 const Header = () => {
   
   return (
-    <div className="bg-black text-white p-6">
+    <div className="bg-black text-white p-6 pt-24">
       <div className="lg:flex  lg:justify-between lg:p-4 lg:gap-44">
         <div className="lg:flex lg:flex-col lg:w-2/4 md:text-center lg:text-left lg:justify-center ">
-          <h1 className="text-5xl font-sans mb-4 text-white type-text-output">
+          <h1 className="text-5xl font-sans mb-4 text-white type-text-output ">
             Trusted platform for <span className="text-blue-600">crypto</span>{" "}
             investments
           </h1>
